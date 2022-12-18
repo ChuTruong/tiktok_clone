@@ -48,6 +48,9 @@
 }
 
 .primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--white);
     border-color: var(--primary);
     background-color: var(--primary);
@@ -59,6 +62,9 @@
 }
 
 .outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--primary);
     border-color: currentColor;
 
@@ -69,6 +75,9 @@
 }
 
 .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
         text-decoration: underline;
     }

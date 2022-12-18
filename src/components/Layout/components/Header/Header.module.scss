@@ -12,6 +12,7 @@
 .inner {
     height: 100%;
     width: var(--default-layout-width);
+    padding: 0 var(--default-layout-horizontal-spacer);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,14 +93,44 @@
     color: rgba(22, 24, 35, 0.5);
 }
 
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .more-btn {
     font-size: 2.2rem;
     margin-left: 26px;
     padding: 0 10px;
     background-color: transparent;
+    cursor: pointer;
 }
-.action {
+
+.upload-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 110px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    color: #161823;
+    background-color: transparent;
+    padding: 1px 16px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.upload-text {
+    margin-left: 8px;
+    line-height: 32px;
 }

@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import { useEffect, useState, useRef } from 'react';
 import { useDebounce } from '~/hooks';
 
-import * as searchServices from '~/apiServices/searchServices';
+import * as searchServices from '~/services/searchService';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 import styles from './Searach.module.scss';

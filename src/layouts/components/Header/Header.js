@@ -18,7 +18,7 @@ import Button from '~/components/Button';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Menu from '~/components/Popper/Menu';
-import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
+import Icons from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
 import config from '~/config';
@@ -98,18 +98,18 @@ function Header() {
                         <>
                             <Tippy delay={[0, 133]} content="Upload video" placement="bottom">
                                 <button className={cx('upload-btn')}>
-                                    <UploadIcon width="20px" height="20px"></UploadIcon>
+                                    <Icons.UploadIcon width="20px" height="20px"></Icons.UploadIcon>
                                     <span className={cx('upload-text')}>Upload</span>
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 133]} content="Message" placement="bottom">
                                 <button className={cx('message-btn')}>
-                                    <MessageIcon width="26px" height="26px"></MessageIcon>
+                                    <Icons.MessageIcon width="26px" height="26px"></Icons.MessageIcon>
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 133]} content="Inbox" placement="bottom">
                                 <button className={cx('inbox-btn')}>
-                                    <InboxIcon></InboxIcon>
+                                    <Icons.InboxIcon></Icons.InboxIcon>
                                 </button>
                             </Tippy>
                         </>

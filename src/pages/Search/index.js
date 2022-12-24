@@ -1,5 +1,3 @@
-function Search() {
-    return <h2>Search page</h2>;
-}
+import Search from './Search.js';
 
 export default Search;

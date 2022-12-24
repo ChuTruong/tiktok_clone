@@ -1,5 +1,3 @@
-function Upload() {
-    return <h2>Upload page</h2>;
-}
+import Upload from './Upload.js';
 
 export default Upload;

@@ -1,5 +1,3 @@
-function Profile() {
-    return <h2>Profile page</h2>;
-}
+import Profile from './Profile';
 
 export default Profile;

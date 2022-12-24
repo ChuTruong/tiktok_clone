@@ -1,5 +1,3 @@
-function Following() {
-    return <h2>Following page</h2>;
-}
+import Following from './Following.js';
 
 export default Following;

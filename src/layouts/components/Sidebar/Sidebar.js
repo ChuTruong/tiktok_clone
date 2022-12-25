@@ -3,6 +3,7 @@ import config from '~/config';
 import styles from './Sidebar.module.scss';
 import Menu, { MenuItem } from './Menu';
 import Icons from '~/components/Icons';
+import SuggestedAccounts from '~/components/SuggestedAccounts';
 
 const cx = classNames.bind(styles);
 
@@ -23,12 +24,15 @@ function Sidebar() {
                     activeIcon={<Icons.UserGroupActiveIcon />}
                 />
                 <MenuItem
-                    title="Live"
+                    title="LIVE "
                     to={config.routes.live}
                     icon={<Icons.LiveIcon />}
                     activeIcon={<Icons.LiveActiveIcon />}
                 />
             </Menu>
+
+            <SuggestedAccounts label="Suggested accounts" />
+            {/* <SuggestedAccounts label="Following accounts" /> */}
         </aside>
     );
 }
